@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard - Downloader</title>
+</head>
+<body>
+    <h2>Welcome, {{ user }}!</h2>
+
+    <form action="/download" method="POST">
+        <input type="text" name="url" placeholder="Enter YouTube URL" required size="50"><br><br>
+        <label><input type="radio" name="format" value="video" checked> Video</label>
+        <label><input type="radio" name="format" value="audio"> MP3</label><br><br>
+        <button type="submit">Download</button>
+    </form>
+
+    <br><br>
+    <a href="/logout">Logout</a>
+</body>
+</html>
